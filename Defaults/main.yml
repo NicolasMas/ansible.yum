@@ -1,8 +1,12 @@
 ---
 
 yum_enabled: yes
+# Default packages to get. Format "name1, name2, nameX"
 yum_default_packages: [ "@Development tools", nano, wget ]
+# Additional packages. Leave empty if none
 yum_packages: []
+# Additional repositories: ex. jenkins repo
 yum_repos: {}
 yum_services: []
-yum_update: no
+# Yum will do an update first
+yum_update: yes
