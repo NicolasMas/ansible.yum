@@ -5,7 +5,7 @@
   when: yum_update
 
 - name: yum | Setup repos
-  copy: dest=/etc/yum.repos.d/{{item.key}}.repo content="{{item.value}}"
+  template: dest=/etc/yum.repos.d/{{item.key}} src="{{item.value}}"
   with_dict: yum_repos
 
 - name: yum | Install default packages

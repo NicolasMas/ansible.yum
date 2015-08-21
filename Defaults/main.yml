@@ -5,8 +5,10 @@ yum_enabled: yes
 yum_default_packages: [ "@Development tools", nano, wget ]
 # Additional packages. Leave empty if none
 yum_packages: []
-# Additional repositories: ex. jenkins repo
-yum_repos: {}
+# Additional repositories: ex. mongodb repo
+yum_repos:
+    mongodb.repo: mongodb.repo.j2
+
 yum_services: []
 # Yum will do an update first
 yum_update: yes
