@@ -4,8 +4,8 @@ yum_enabled: yes
 # Default packages to get. Format "name1, name2, nameX"
 yum_default_packages: [ "@Development tools", nano, wget ]
 # Additional packages. Leave empty if none
-yum_packages: []
-# Additional repositories: ex. mongodb repo
+yum_packages: [iptables-services]
+# Additional repositories: ex. jenkins repo
 yum_repos:
     mongodb.repo: mongodb.repo.j2
 
